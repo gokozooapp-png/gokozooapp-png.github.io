@@ -330,6 +330,18 @@
   }
   .phones-row::-webkit-scrollbar { display: none; }
 
+  /* Avec une souris (ou sur grand écran), on ne peut pas faire glisser la
+     rangée sur le côté : les captures passent à la ligne pour être toutes
+     visibles. Sur téléphone (écran tactile étroit), on garde le défilement. */
+  @media (hover: hover) and (pointer: fine), (min-width: 700px) {
+    .phones-row {
+      flex-wrap: wrap;
+      justify-content: center;
+      overflow-x: visible;
+      row-gap: 22px;
+    }
+  }
+
   .phone {
     flex: 0 0 190px;
     scroll-snap-align: start;
