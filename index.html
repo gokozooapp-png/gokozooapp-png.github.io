@@ -1,10 +1,10 @@
 <!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style><title>Gokozoo</title>
-<meta name="description" content="Le compagnon santé de vos chats et chiens : premiers secours détaillés, vétérinaire de garde, carnet de santé, rappels de visite annuelle, scanner de plantes, liste des aliments dangereux. Disponible sur l'App Store.">
+<meta name="description" content="Le compagnon santé de vos chats et chiens : premiers secours détaillés, vétérinaire de garde, carnet de santé et de vaccination, rappels, partage en famille, sécurité à la maison, scanner de plantes, plus de 170 aliments. Disponible sur l'App Store.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://gokozooapp-png.github.io/">
 <meta property="og:site_name" content="Gokozoo">
 <meta property="og:title" content="Gokozoo : carnet de santé & urgences pour chats et chiens">
-<meta property="og:description" content="Premiers secours détaillés, vétérinaire de garde, rappels de visite annuelle, scanner de plantes, liste des aliments dangereux. Les urgences sont toujours gratuites.">
+<meta property="og:description" content="Premiers secours détaillés, vétérinaire de garde, carnet de vaccination, partage en famille, sécurité à la maison, scanner de plantes, plus de 170 aliments. Les urgences sont toujours gratuites.">
 <meta property="og:image" content="https://gokozooapp-png.github.io/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -539,6 +539,8 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 14px;
   }
+  /* Carte « Sécurité à la maison » sur 2 colonnes : grille sans case vide (téléphone et ordinateur). */
+  .grid .span2 { grid-column: span 2; }
 
   @media (min-width: 620px) {
     .grid { grid-template-columns: repeat(3, 1fr); }
@@ -956,7 +958,7 @@
       <div class="card">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18"/><path d="M3 11a9 9 0 0 0 18 0"/><path d="M12 11V7a3 3 0 0 1 3-3"/></svg></div>
         <h3>Aliments</h3>
-        <p>Cherchez un aliment courant dans la liste pour savoir s'il peut être partagé sans risque avec votre chat ou votre chien.</p>
+        <p>Plus de 170 aliments, classés par catégorie et vérifiés auprès de sources vétérinaires : sachez en un instant ce qui peut être partagé sans risque avec votre chat ou votre chien.</p>
       </div>
 
       <div class="card">
@@ -995,10 +997,22 @@
         <p>Avec le Premium, chaque repas ou gourmandise donné est enregistré avec son heure exacte : plus de doute sur qui a déjà nourri l'animal.</p>
       </div>
 
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 2 4 4"/><path d="m17 7 3-3"/><path d="M19 9 8.7 19.3a1 1 0 0 1-1.4 0l-2.6-2.6a1 1 0 0 1 0-1.4L15 5"/><path d="m9 11 4 4"/><path d="m5 19-3 3"/><path d="m14 4 6 6"/></svg></div>
+        <h3>Carnet de vaccination</h3>
+        <p>Notez chaque vaccin et la date du prochain rappel : Gokozoo vous prévient 30 jours puis 7 jours avant. Avec le Premium, gardez la photo de la vignette.</p>
+      </div>
+
+      <div class="card span2">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M12 11v4"/><path d="M12 18h.01"/></svg></div>
+        <h3>Sécurité à la maison</h3>
+        <p>70 dangers du quotidien et produits toxiques — médicaments, produits ménagers, jardin, promenade — avec le niveau de risque pour le chat et le chien, la prévention et le bon réflexe en cas d'urgence.</p>
+      </div>
+
       <div class="card" style="grid-column: 1 / -1;">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><circle cx="17" cy="9" r="2.5"/><path d="M2.5 21a6.5 6.5 0 0 1 13 0"/><path d="M15.5 14.2A5 5 0 0 1 21.5 19"/></svg></div>
         <h3>Partage en famille</h3>
-        <p>Avec Premium Famille, partagez la fiche d'un animal avec vos proches : repas, gourmandises, médicaments et rendez-vous sont à jour sur chaque iPhone. Vous choisissez qui peut modifier et qui peut seulement consulter.</p>
+        <p>Avec Premium Famille, partagez la fiche d'un animal avec vos proches : repas, gourmandises, médicaments et rendez-vous sont à jour sur chaque iPhone. Chacun voit qui a fait quoi et à quelle heure, par exemple « Repas à 8 h 12 (Marie) ». Vous choisissez qui peut modifier et qui peut seulement consulter.</p>
       </div>
     </div>
   </section>
